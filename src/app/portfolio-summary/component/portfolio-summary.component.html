@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="customer-portfolio">
+               
+                    <div class="row"> 
+                        <div class="col-6">
+                            <label for="customerName" class="title"> Customer Name XXXXXX </label>
+                        </div>
+                        <div class="col" class="detail-lable">
+                            <label for="portfolioNumber" > Portfolio Number:   </label>
+                            <label for="portfolioNumber" > 1231121212 </label>  
+                                
+                        </div>
+                        <div class="col">
+                            <button (click)="addTrade()" class="btn btn-dark">Add Trade</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="portifolioValue" class="detail-lable"> Portfolio Value($): </label>
+                                    <label>43,213</label>
+                                </div>
+                                <div class="col">
+                                    <label for="currentPerformance" class="detail-lable"> Current Performance(%): </label>
+                                    <label>23.4%</label>
+                                </div>
+                                <div class="'col">
+                                    <label for="investmentStrategy" class="detail-lable"> Investment Strategy: </label>
+                                    <label>Moderate</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="positions">
+                <div class="tab">
+                    <button class="tablinks" (click)="openTab('positions')">Positions</button>
+                    <button class="tablinks" (click)="openTab('audit')">Audit</button>
+                </div>
+                <div id="Positions" class="tabcontent" *ngIf="currentTab === 'positions'">
+                    <app-positions></app-positions>
+                </div>
+                <div id="Audit" class="tabcontent" *ngIf="currentTab === 'audit'">
+                   <app-audit></app-audit>
+                </div>
+            </div>
+        </div>
+    </div> 
+   
+</div>
+
+
+  

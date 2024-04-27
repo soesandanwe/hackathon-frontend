@@ -8,6 +8,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { PortfolioSummaryComponent } from './portfolio-summary/component/portfolio-summary.component';
+import { TradeComponent } from './trade/component/trade.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
+  { path: 'summary', component: PortfolioSummaryComponent },
+  { path: 'trade', component: TradeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 

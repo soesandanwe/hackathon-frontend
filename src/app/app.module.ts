@@ -15,6 +15,12 @@ import { BoardUserComponent } from './board-user/board-user.component';
 
 import { httpInterceptorProviders } from './_helpers/http.interceptor';
 
+import { NgxPaginationModule } from 'ngx-pagination';
+import { PortfolioSummaryComponent } from './portfolio-summary/component/portfolio-summary.component';
+import { PositionsComponent } from './positions/component/positions.component';
+import { AuditComponent } from './audit/component/audit.component';
+import { TradeComponent } from './trade/component/trade.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,13 +30,18 @@ import { httpInterceptorProviders } from './_helpers/http.interceptor';
     ProfileComponent,
     BoardAdminComponent,
     BoardModeratorComponent,
-    BoardUserComponent
+    BoardUserComponent,
+    PortfolioSummaryComponent,
+    PositionsComponent,
+    AuditComponent,
+    TradeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
